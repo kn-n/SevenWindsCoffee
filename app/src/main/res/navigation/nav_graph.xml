@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="ru.kn_n.sevenwindscoffee.authenticationModule.presentation.RegisterFragment"
+        android:label="@string/register_fragment">
+        <action
+            android:id="@+id/action_registerFragment_to_cafesFragment"
+            app:destination="@id/cafesFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.kn_n.sevenwindscoffee.authenticationModule.presentation.LoginFragment"
+        android:label="@string/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_cafesFragment"
+            app:destination="@id/cafesFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cafesFragment"
+        android:name="ru.kn_n.sevenwindscoffee.cafesModule.presentation.cafes.CafesFragment"
+        android:label="@string/cafes_fragment" >
+        <action
+            android:id="@+id/action_cafesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_cafesFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ru.kn_n.sevenwindscoffee.cafesModule.presentation.menu.MenuFragment"
+        android:label="@string/menu_fragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="ru.kn_n.sevenwindscoffee.cafesModule.presentation.order.OrderFragment"
+        android:label="@string/order_fragment" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="ru.kn_n.sevenwindscoffee.cafesModule.presentation.map.MapFragment"
+        android:label="@string/map_fragment" />
+</navigation>

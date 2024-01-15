@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/TextRegular.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="label" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            style="@style/TextRegular.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_47"
+            android:layout_below="@id/label"
+            android:layout_marginTop="@dimen/dimen_7"
+            android:background="@drawable/bg_edit_text"
+            android:paddingHorizontal="@dimen/dimen_18"
+            android:paddingVertical="@dimen/dimen_13"
+            android:textAppearance="@style/TextRegular.Edit" />
+
+        <TextView
+            android:id="@+id/error"
+            style="@style/TextRegular.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            tools:text="Пароли не совпадают" />
+    </RelativeLayout>
+
+</merge>

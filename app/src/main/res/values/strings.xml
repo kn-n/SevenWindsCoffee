@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Seven Winds Coffee</string>
+    <string name="e_mail">e-mail</string>
+    <string name="hint_mail">example@mail.ru</string>
+    <string name="password">Пароль</string>
+    <string name="hint_password">*****</string>
+    <string name="password_repeat">Повторите пароль</string>
+    <string name="reg">Регистрация</string>
+    <string name="log">Вход</string>
+    <string name="log_in">Войти</string>
+    <string name="on_map">На карте</string>
+    <string name="to_cart">Перейти к оплате</string>
+    <string name="pay">Оплатить</string>
+    <string name="thanks_message">Время ожидания заказа\n15 минут!\nСпасибо, что выбрали нас!</string>
+    <string name="already_have_acc">Уже есть аккаунт</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="cancel">Закрыть</string>
+    <string name="passwords_dont_match">Пароли не совпадают</string>
+    <string name="empty_field">Поле должно быть заполнено</string>
+    <string name="login_error">Неверный e-mail или пароль</string>
+    <string name="register_fragment">Регистрация</string>
+    <string name="login_fragment">Вход</string>
+    <string name="cafes_fragment">Ближайшие кофейни</string>
+    <string name="map_fragment">Карта</string>
+    <string name="menu_fragment">Меню</string>
+    <string name="order_fragment">Ваш заказ</string>
+</resources>

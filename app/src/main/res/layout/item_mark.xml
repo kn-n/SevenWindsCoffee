@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mark"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_coffee_cup_24dp"
+        android:padding="@dimen/dimen_10"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_button"
+        app:tint="@color/brown_3" />
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextRegular.Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/dimen_9"
+        android:gravity="center"
+        tools:text="Simplecoffee" />
+</LinearLayout>
