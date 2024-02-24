@@ -5,11 +5,11 @@ import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import ru.kn_n.sevenwindscoffee.databaseModule.Order
-import ru.kn_n.sevenwindscoffee.databinding.FragmentCafesBinding
+import ru.kn_n.sevenwindscoffee.databinding.FragmentCartBinding
 import ru.kn_n.sevenwindscoffee.utils.base.BaseFragment
 import javax.inject.Inject
 
-class OrderFragment : BaseFragment<FragmentCafesBinding>(FragmentCafesBinding::inflate) {
+class OrderFragment : BaseFragment<FragmentCartBinding>(FragmentCartBinding::inflate) {
 
     @Inject
     lateinit var viewModel: OrderViewModel
@@ -37,7 +37,7 @@ class OrderFragment : BaseFragment<FragmentCafesBinding>(FragmentCafesBinding::i
     }
 
     private fun initAdapter() {
-        binding.cafes.apply {
+        binding.items.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = orderAdapter
         }
